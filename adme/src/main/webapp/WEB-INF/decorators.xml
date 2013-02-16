@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/decoradores">
+    <decorator name="entrada" page="entrada.jsp">
+          <pattern>/login</pattern>
+    </decorator>
+    <decorator name="default" page="default.jsp">
+          <pattern>/*</pattern>
+    </decorator>
+</decorators>

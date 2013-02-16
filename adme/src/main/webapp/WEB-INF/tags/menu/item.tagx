@@ -1,0 +1,18 @@
+<jsp:root xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+  <jsp:output omit-xml-declaration="yes" />
+
+  <jsp:directive.attribute name="url" type="java.lang.String" required="true" description="The link URL" />
+  <jsp:directive.attribute name="label" type="java.lang.String" required="false" description="The label used for this menu item" />
+  <jsp:directive.attribute name="img" type="java.lang.Boolean" required="false" description="Usado para mostrar imagen de capturado"/>
+      
+    <li id="${fn:escapeXml(id)}">
+      <spring:url value="${url}" var="menu_item_url"/>
+      <spring:url value="/resources/images/check.gif" var="list_image_url" />
+      <a href="${menu_item_url}" title="${fn:escapeXml(label)}">
+        <c:out value="${label} &#160;"/> 
+        <c:if test="${img == true}">              
+         	<img alt="${fn:escapeXml(label)}" src="${fn:escapeXml(list_image_url)}" class="image"/>
+        </c:if>         	
+      </a>
+    </li>
+</jsp:root>

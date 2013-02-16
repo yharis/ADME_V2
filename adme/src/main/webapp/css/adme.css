@@ -1,0 +1,120 @@
+/* Propiedades de layout general */
+#page {
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+}
+#header-box {
+    background-color: #FFFFFF;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+#menu-box {
+    background-color: white;
+    display: block;
+    float: left;
+    width: 180px;
+}
+#body-box {
+    background-color: white;
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+}
+#login-box {
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    margin: 0px;
+    width: 400px;    
+}
+#content {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+}
+#salida {
+   text-align: right;
+}
+div.hr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    clear: both;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+label.required {
+    font-weight: bold;
+}
+#menu-box ul { 
+    list-style: none inside none;
+    padding-left: 0;
+}
+td.decimal {
+    text-align: right;
+    padding-right: 5px;
+}
+td.right {
+    text-align: right;
+}
+.ancho25{
+    width: 240px;
+}
+.ancho50{
+    width: 480px;
+}
+.ancho75{
+    width: 720px;
+}
+.ancho100{
+    width: 940px;
+}
+div.franja{
+    background-color: #CEAF78;
+    border-width: 0px;
+    padding: 4px;
+}
+div.area_trabajo{
+    background-color: white;
+    border-width: 0px;
+}
+
+div.alinear_logo{
+    text-align: center;
+}
+div.seccion{
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-width: 1px;
+	background-color: #F6F6F6;
+	padding: 4px;	
+	}
+
+div.label_seccion{
+	font-size: 14px;
+	font-weight: bold;	
+	color: #030350;
+	margin: 1em 1em;	
+}
+
+td.table_td{
+	background-color:#F6F6F6;
+        border: 0px;
+	padding-bottom: 0.5em;
+}
+td.table_td_blanco{
+	background-color:#FFFFFF;
+        border: 0px;
+	padding-bottom: 0.5em;
+}
+table.tabla_invisible{
+        background-color: transparent;
+	border: 0px;
+}
